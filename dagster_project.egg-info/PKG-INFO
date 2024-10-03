@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dagster_project
+Version: 0.0.0
+Requires-Dist: dagster==1.7.7
+Requires-Dist: dagster-cloud==1.7.7
+Requires-Dist: dagster-snowflake==0.23.7
+Requires-Dist: pymongo>=4.3.3
+Requires-Dist: dlt[snowflake]>=0.3.5
+Requires-Dist: scikit-learn==1.5.0
+Provides-Extra: dev
+Requires-Dist: dagster-webserver; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
