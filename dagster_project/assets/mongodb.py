@@ -4,6 +4,7 @@ from dagster_embedded_elt.dlt import DagsterDltResource, dlt_assets
 import dlt
 from ..mongodb import mongodb
 
+
 mflix = mongodb(
     database='sample_mflix'
 ).with_resources(
@@ -11,8 +12,9 @@ mflix = mongodb(
     "embedded_movies"
 )
 
+
 @dlt_assets(
-    dlt_source=mflix, # this dlt source is the  mflix source mentioned above
+    dlt_source=mflix,
     dlt_pipeline=dlt.pipeline(
         pipeline_name="local_mongo",
         destination='snowflake',
